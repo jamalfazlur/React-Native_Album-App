@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 
 const styles = {
     viewStyle: {
-        backgroundColor: '#F8F8F8',
+        backgroundColor: 'salmon',
         justifyContent: 'center',
         alignItems: 'center',
         height: 60,
