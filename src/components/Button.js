@@ -7,13 +7,14 @@ const styles = {
         alignSelf: 'stretch',
         backgroundColor: '#FFF',
         borderRadius: 5,
-        borderColor: '#007AFF',
+        borderWidth: 1,
+        borderColor: 'salmon',
         marginLeft: 5,
         marginRight: 5
     },
     textStyle: {
         alignSelf: 'center',
-        color: '#007AFF',
+        color: 'salmon',
         fontSize: 16,
         fontWeight: '600',
         paddingTop: 10,
@@ -26,7 +27,7 @@ class Button extends Component {
     render() {
         const { buttonStyle, textStyle } = styles;
         return (
-            <TouchableOpacity style={buttonStyle}>
+            <TouchableOpacity style={buttonStyle} onPress={this.props.onPress} >
                 <Text style={textStyle}>{this.props.children}</Text>
             </TouchableOpacity>
         );
